@@ -4,11 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>NameProject</title>
 </head>
+
 <body>
     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Registro Estudiantes</h1>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registro Estudiante
+                  </button>
+            </div>
+        </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <!--Creación del form-->
+          <form id="form">
+
+            <div class="mb-3">
+                <label for="dni" class="form-label">Tipo de Documento</label>
+                <select name="dni" id="dni" class="form-select">
+                    <option value="">Seleccione...</option>
+                    <option value="cedula">Cedula</option>
+                    <option value="ti">Tarjeta de Identidad</option>
+                    <option value="cedula">Pasaporte</option>
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="numberDni" class="form-label">Número de Indentidad</label>
+               <input type="number" class="form-control" id="numberDni">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombres</label>
+               <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Apellidos</label>
+               <input type="text" class="form-control" id="lastName">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Número de Teléfono</label>
+               <input type="number" class="form-control" id="phone">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+               <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="linkedin" class="form-label">Usuario LinkedIn</label>
+               <input type="text" class="form-control" id="linkedin">
+            </div>
+
+            <div class="mb-3">
+                <label for="github" class="form-label">Usuaro GitHub</label>
+               <input type="text" class="form-control" id="github">
+            </div>
+
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <script type="module" src="../dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

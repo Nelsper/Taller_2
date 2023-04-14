@@ -33,16 +33,17 @@
         </div>
 
         <div class="modal-body">
+
           <!--Creación del form-->
           <form id="form">
 
             <div class="mb-3">
-                <label for="dni" class="form-label">Tipo de Documento</label>
-                <select name="dni" id="dni" class="form-select">
+                <label for="tipoDni" class="form-label">Tipo de Documento</label>
+                <select name="tipoDni" id="tipoDni" class="form-select">
                     <option value="">Seleccione...</option>
                     <option value="cedula">Cedula</option>
                     <option value="ti">Tarjeta de Identidad</option>
-                    <option value="cedula">Pasaporte</option>
+                    <option value="pasaporte">Pasaporte</option>
                 </select>
 
             </div>
@@ -86,15 +87,16 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
         </div>
       </div>
     </div>
   </div>
 
 
-    <script type="module" src="../dist/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="module" src="../dist/index.js"></script>
 </body>
 </html>
